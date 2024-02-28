@@ -1,0 +1,33 @@
+
+<body >
+
+  <ion-content class="container">
+    
+    <ion-button (click)="apagar()" expand="block" fill="clear" shape="round">
+      Apagar
+    </ion-button>
+    <ion-button (click)="encender()" expand="block" fill="clear" shape="round">
+      Encender
+    </ion-button>
+
+    <ion-button class="boton" (click)=toogleState() shape="round" [color]="ledstatus? 'success':'danger'" >
+      {{ledstatus ? 'Encendido' : "Apagado"}}
+    </ion-button>
+
+    <ion-button (click)=toogleState2() shape="round" [color]="ledstatus2? 'success':'danger'">
+      {{ledstatus2 ? 'Encendido' : "Apagado"}}
+    </ion-button>
+
+    <ion-button (click)=toogleState3() shape="round" [color]="ledstatus3? 'success':'danger'">
+      {{ledstatus3 ? 'Encendido' : "Apagado"}}
+    </ion-button>
+
+    <ion-button (click)=toogleState4() shape="round" [color]="ledstatus4? 'success':'danger'">
+      {{ledstatus4 ? 'Encendido' : "Apagado"}}
+    </ion-button>
+
+    <ion-button (click)=toogleStatet() shape="round" [color]="ledstatust? 'success':'danger'">
+      {{ledstatust ? 'Encendido' : "Apagado"}}
+    </ion-button>
+  </ion-content>
+</body>
